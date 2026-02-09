@@ -44,6 +44,14 @@ When the user asks “我该怎么把论文发给你”, request materials in th
 
 If files are provided, process them first; if evidence is missing for any subsection, then perform targeted supplementary search and clearly mark newly added sources.
 
+
+## Upload and format clarification
+- PDF is a preferred input format and should be accepted whenever file upload is available.
+- If the chat channel only supports images, ask the user to either:
+  1) upload PDF in batches as page screenshots, or
+  2) provide extracted text/notes/summary doc while keeping the PDF for citation checks.
+- When PDF cannot be directly parsed, explicitly state the limitation and continue with OCR/text-based extraction from user-provided materials.
+
 ## Quality checklist
 - 三个维度是否都覆盖且结构一致？
 - 是否优先纳入UTD/FT50/ABS4*证据？
