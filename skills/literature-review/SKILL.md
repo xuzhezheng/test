@@ -1,40 +1,52 @@
 ---
 name: literature-review
-description: Conduct systematic and narrative literature reviews for academic or industry topics. Use when users ask for topic scoping, search strategies, inclusion/exclusion criteria, evidence synthesis, gap analysis, citation mapping, or writing a structured review in Chinese or English.
+description: Write management-focused literature reviews in Chinese or English, especially on ESG rating change drivers, social-media disclosure (especially green disclosure), and multimodal information in disclosure research. Use when users need paper screening, synthesis, gap analysis, and APA-formatted references with preference for UTD/FT50/ABS4* journals.
 ---
 
 # Literature Review
 
-## When to use
-Use this skill when the request involves:
-- 文献综述、研究现状总结、研究脉络梳理
-- 检索式设计（关键词、布尔逻辑、数据库选择）
-- 纳入/排除标准与证据分级
-- 从多篇论文提炼共识、冲突与研究空白
-- 输出综述结构（引言、方法、结果、讨论、局限、结论）
+## Scope and default settings
+Use this skill for management/strategy/accounting-style review tasks.
+
+Default review dimensions (unless user overrides):
+1. ESG评级变动的影响因素
+2. 社交媒体上的信息披露（尤其是绿色信息披露）
+3. 多模态信息（文本/图片/视频等）在披露研究中的作用
+
+Default source priority:
+- 第一梯队：UTD、FT50、ABS 4* 期刊
+- 第二梯队：同领域高质量 SSCI/SCI 期刊与重要 working papers
+
+Default writing conventions:
+- 引用与参考文献格式：APA
+- 不强制区分“理论/实证”或“方法”章节，按研究问题和主题聚类组织即可
 
 ## Workflow
-1. 明确研究问题（可用 PICO / SPIDER / CIMO）与边界（年份、语言、学科、文献类型）。
-2. 生成检索策略：核心关键词、同义词、布尔表达式、数据库优先级（如 Google Scholar / PubMed / Web of Science / Scopus / CNKI）。
-3. 说明筛选标准与质量评价维度（方法质量、样本量、偏差风险、可复现性）。
-4. 抽取关键信息：研究对象、方法、数据、主要发现、局限、可推广性。
-5. 进行主题聚类：按理论流派、方法路线、应用场景或时间演进组织证据。
-6. 输出结构化综述：
-   - 研究背景与问题定义
-   - 检索与筛选方法
-   - 主题化证据综合
-   - 争议与不一致结果解释
-   - 研究空白与未来方向
+1. 明确问题边界（时间段、行业、地区、ESG维度、披露媒介类型）。
+2. 围绕三个维度建立检索式与同义词表；先检索高水平期刊，再扩展到相关文献。
+3. 去重并初筛（题目/摘要/关键词），再精筛（引言/方法/结论是否直接回答问题）。
+4. 按主题整合证据：核心结论、边界条件、变量测量差异、结果不一致来源。
+5. 输出综述正文与表格：每个维度至少包含“研究现状—争议点—研究空白—未来方向”。
+6. 生成APA参考文献列表，并标注高水平期刊来源（UTD/FT50/ABS4*）。
 
-## Output requirements
-- 优先用表格汇总关键论文（作者/年份/数据/方法/发现/局限）。
-- 所有结论标注证据强弱（高/中/低）。
-- 明确区分“文献事实”与“推断观点”。
-- 若用户提供文献清单，先做去重与分组再写作。
+## Required output structure
+- 一页执行摘要（核心发现 + 管理启示）
+- 三大维度分节综述（固定）
+- 跨维度综合：共同机制、差异机制、可整合框架
+- 研究空白与可执行选题建议（变量、识别策略、数据来源）
+- APA参考文献
+
+## Data intake: how users should provide papers
+When the user asks “我该怎么把论文发给你”, request materials in this order:
+1. 原文档（PDF/Word/压缩包均可）
+2. 用户自己的总结文档（可含批注、疑问、优先级）
+3. 可选：文献清单表（题目、年份、期刊、DOI/链接）
+
+If files are provided, process them first; if evidence is missing for any subsection, then perform targeted supplementary search and clearly mark newly added sources.
 
 ## Quality checklist
-- 是否覆盖主流数据库与关键关键词变体？
-- 是否说明时间范围与纳排标准？
-- 是否比较了相互冲突的研究结论？
-- 是否指出方法学缺陷与发表偏倚风险？
-- 是否给出可执行的未来研究建议？
+- 三个维度是否都覆盖且结构一致？
+- 是否优先纳入UTD/FT50/ABS4*证据？
+- 是否解释了关键分歧（样本、测量、情境、识别策略）？
+- 是否所有文内引用与文末参考文献均符合APA？
+- 是否给出可落地的后续研究路径？
